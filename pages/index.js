@@ -25,7 +25,7 @@ export default function Home() {
           </div>
         </div>
       </div> */}
-      <div className="h-screen bg-white text-black dark:bg-black dark:text-white flex items-center overflow-hidden select-none">
+      <div className="h-screen text-black bg-black flex items-center overflow-hidden select-none">
         <div className="relative bottom-16 xl:bottom-24 w-full">
           <div className="leading-[10vw] block absolute w-full text-[13vw] -mr-[0.1em] tracking-[0.1em] text-center text-indigo-500 fade font-extrabold">
             HAMAYOON

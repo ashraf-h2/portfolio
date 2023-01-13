@@ -65,10 +65,10 @@ export default function Navbar() {
           >
             <ul className="flex-row flex pl-0 mb-0 list-none">
               <NavbarItem href="/" text="Home" />
-              <NavbarItem href="/#about" text="About" />
-              <NavbarItem href="/#education" text="Education" />
-              <NavbarItem href="/#experience" text="Experience" />
-              <NavbarItem href="/#projects" text="Projects" />
+              <NavbarItem href="/#about-section" text="About" />
+              <NavbarItem href="/#education-section" text="Education" />
+              <NavbarItem href="/#experience-section" text="Experience" />
+              <NavbarItem href="/#projects-section" text="Projects" />
               {/* <NavbarItem href="/#awards" text="Awards" /> */}
               {/* <NavbarItem href="/#contact" text="Contact" /> */}
             </ul>
@@ -90,8 +90,8 @@ export default function Navbar() {
       >
         <ul className="flex flex-col">
           <NavbarListItem href="/" title="Home" />
-          <NavbarListItem href="/about" title="About" />
-          <NavbarListItem href="/education" title="Education" />
+          <NavbarListItem href="/about-section" title="About" />
+          <NavbarListItem href="/education-section" title="Education" />
         </ul>
       </div>
     </nav>
@@ -101,20 +101,21 @@ export default function Navbar() {
 function NavbarItem({ href, text }) {
   return (
     <li className="list-item">
-      <Link
-        href={href}
-        className={classNames(
-          "text-base py-3 px-5 font-medium border-2 hover:dark:border-b-white border-b-transparent hover:border-b-black border-t-transparent border-x-transparent transition-all"
-        )}
-      >
-        <span
-          id="nav-bar-item"
+      <Link href={href} legacyBehavior>
+        <a
           className={classNames(
-            "transition-all duration-100 dark:text-white text-black"
+            "text-base py-3 px-5 font-medium border-2 hover:dark:border-b-white border-b-transparent hover:border-b-black border-t-transparent border-x-transparent transition-all"
           )}
         >
-          {text}
-        </span>
+          <span
+            id="nav-bar-item"
+            className={classNames(
+              "transition-all duration-100 dark:text-white text-black"
+            )}
+          >
+            {text}
+          </span>
+        </a>
       </Link>
     </li>
   );

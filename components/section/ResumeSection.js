@@ -83,8 +83,8 @@ export default function ResumeSection() {
                 icon={<FaUserGraduate color="white" size={"24px"} />}
               >
                 <p className="dark:text-white text-black font-poppins">
-                  Actively participating in mechanical, electronic and software
-                  based projects.
+                <span className="font-bold">Courses</span>: Thermodynamics, Digital Systems, Electric Machines and Actuators, Machine Design, Heat Transfer, Microprocessor Systems, Fluid Mechanics
+
                 </p>
               </ResumeBlock>
             </div>
@@ -102,8 +102,10 @@ export default function ResumeSection() {
                 icon={<GiHamburger color="white" size={"24px"} />}
               >
                 <ul className="list-disc dark:text-white text-black font-poppins ml-4">
-                  <li>Managing inventory</li>
-                  <li>Scheduling and handling sales</li>
+                  <li>Managing inventory to ensure optimal stock levels and availability</li>
+                  <li>Scheduling and handling sales to drive revenue</li>
+                  <li>Resolving customer complaints and issues to improve satisfaction</li>
+                  <li>Managing financial records and reports to support decision making</li>
                 </ul>
               </ResumeBlock>
               <ResumeBlock
@@ -113,11 +115,11 @@ export default function ResumeSection() {
                 icon={<GiBarbecue color="white" size={"24px"} />}
               >
                 <ul className="list-disc dark:text-white text-black font-poppins ml-4">
-                  <li>Catering, managing inventory</li>
+                  <li>Assisted with catering and inventory management</li>
                   <li>
-                    Demonstrated excellent communication skills while responding
-                    to customers
+                  Exhibited strong communication abilities when communicating with customer
                   </li>
+                  <li>Handled large-scale orders, such as weddings</li>
                 </ul>
               </ResumeBlock>
             </div>
@@ -136,16 +138,10 @@ export default function ResumeSection() {
                     projectText={
                       <ProjectDescriptionList
                         list={[
-                          `VisionX is a device that can help the visually impaired in
-                      their daily life. It can be worn same as a VR headset and
-                      incorporates a Raspberry Pi 3, an infrared night vision
-                      camera, a set of ultrasonic sensors, a GPS module, and a pair
-                      of bone conducting headphones.`,
-                          `It is based on the TensorFlow framework and currently uses
-                      Google's pre-trained model which is able to recognize many
-                      everyday objects.`,
-                          `It incorporates Google Assistant which allows for the user to
-                      do many tasks, one of which is to make a grocery list.`,
+                          `Led a group of 4 to create a device that assists individuals with visual impairments`,
+                          `Integrated Tensorflow framework to perform object recognition`,
+                          `3D designed and managed all of the wired components`,
+                          `Wrote Python scripts for Raspberry Pi to control the ultrasonic sensors`
                         ]}
                       />
                     }
@@ -159,25 +155,38 @@ export default function ResumeSection() {
                     )}
                   />
                   <ProjectCard
-                    projectName="aslX"
-                    projectSubtitle="Developed at DeltaHacks 7"
+                    projectName="Implementation of Simple Processor "
+                    projectSubtitle="Developed at TMU University"
                     projectText={
                       <ProjectDescriptionList
                         list={[
-                          `aslX uses MediaPipe's Hands API to detect ASL and produces subtitles over video calls!`,
-                          `How it works: MediaPipe's Hands API provides precise keypoint localization of 21 3D hand-knuckle coordinates. These coordinates are then matched against pre-defined ASL words' coordinates to find similarities.`,
+                          `Designed and implementation of simple 8-bit microprocessor`,
+                          `The processor consisted of ALU, Registers to store data, and control unit`,
+                          `Performed simple mathematical operations using altera boards`
                         ]}
                       />
                     }
                   />
                   <ProjectCard
-                    projectName="Integrated DoorLock"
+                    projectName="Automated Door Unlocking System"
                     // projectSubtitle="Developed at DeltaHacks 7"
                     projectText={
                       <ProjectDescriptionList
                         list={[
-                          `Integrated Door Lock System is a system that helps the differently abled in unlocking and locking their apartment doors.`,
-                          `The system has a device that sits behind the door of the apartment and waits for a signal to unlock or lock the door. Once a command is received, the device pushes or pulls the door knob.`,
+                          `Created a door access solution for individuals with disabilities by designing a system that utilizes a fingerprint sensor and rack gear mechanism`,
+                          `Used Arduino, servo motors, and fingerprint sensors to ensure secure and efficient operation`,
+                        ]}
+                      />
+                    }
+                  />
+                  <ProjectCard
+                    projectName="Blind Spot Car Detector"
+                    // projectSubtitle="Developed at DeltaHacks 7"
+                    projectText={
+                      <ProjectDescriptionList
+                        list={[
+                          `Blind spot car detection device to assist driving in old vehicles`,
+                          `Allows users to get an alert while changing lanes if a car is in the blind spot`,
                         ]}
                       />
                     }

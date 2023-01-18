@@ -3,35 +3,58 @@ import Navbar from "../components/navbar/Navbar";
 import AboutSection from "../components/section/AboutSection";
 import ResumeSection from "../components/section/ResumeSection";
 import SpaceFiller from "../components/space-fillers/SpaceFiller";
+import Head from "next/head";
 
 export default function Home() {
   return (
     <div>
+      <Head>
+        <title>Hamayoon Ashraf | Mechanical Engineering Student</title>
+        <meta charSet="utf-8" />
+        <meta
+          name="viewport"
+          content="width=device-width, initial-scale=1, shrink-to-fit=no"
+        />
+        <meta
+          name="title"
+          content="Hamayoon Ashraf - Mechanical Engineering Student"
+        />
+        <meta
+          name="description"
+          content="I am a Mechanical Engineering Student at Toronto Metropolitan University who has worked on several groundbreaking projects. With my knowledge in Java, Python, SolidWorks, and many more programs and languages, I continue to develop amazing projects that aim to change the world."
+        />
+        <meta name="robots" content="index,follow" />
+        <meta
+          name="keywords"
+          content="Hamayoon, Ashraf, Hamayoon Ashraf, Mechanical, Engineer, Mechanical Engineer, Developer, Mechatronics, Ryerson University, Ryerson, TMU, Toronto Metropolitan, SolidWorks, AutoCAD, Java, Python, C, JavaScript, BASH, Arduino, Raspberry Pi, DeltaHacks, VisionX, QuadSense, Integrated Door Lock"
+        />
+
+        <meta
+          property="og:title"
+          content="Hamayoon Ashraf - Mechanical Engineering Student"
+        />
+        <meta property="og:link" content="https://hamayoonashraf.com/" />
+        <meta
+          property="og:description"
+          content="I am a Mechanical Engineering Student at Toronto Metropolitan University who has worked on several groundbreaking projects. With my knowledge in Java, Python, SolidWorks, and many more programs and languages, I continue to develop amazing projects that aim to change the world."
+        />
+        <meta
+          property="og:image"
+          content="https://www.hamayoonashraf.com/hamayoon-visionx2.png"
+        />
+
+        <link rel="amphtml" href="https://www.hamayoonashraf.com/index_amp" />
+        <link rel="canonical" href="https://hamayoonashraf.com/" />
+        <link rel="icon" href="/favicon.ico" />
+      </Head>
       <Navbar />
-      {/* <div className="h-screen bg-white text-black dark:bg-black dark:text-white grid place-content-center overflow-hidden select-none">
-        <div className="relative bottom-5">
-          <span className="leading-[160px] block tracking-[0.2em] -mr-[0.2em] lg:tracking-widest text-[10vw] xl:text-[220px] text-indigo-500 fade font-extrabold relative">
-            HAMAYOON
-          </span>
-          <div className="absolute fade-image xl:-top-[240px] xl:left-64 z-50 inline-block -top-4 left-8">
-            <Image
-              src="/hamayoon-visionx.png"
-              alt="Hamayoon VisionX"
-              width={1000}
-              height={1000}
-              quality={100}
-              priority={true}
-            />
-          </div>
-        </div>
-      </div> */}
       <div className="h-screen text-black bg-black flex items-center overflow-hidden select-none">
         <div className="relative bottom-16 xl:bottom-24 w-full">
           <div className="leading-[10vw] block absolute w-full text-[13vw] -mr-[0.1em] tracking-[0.1em] text-center text-indigo-500 fade font-extrabold">
             HAMAYOON
           </div>
           <div className="absolute fade-image -bottom-[26vw] left-[28%] z-50">
-            <img src="/hamayoon-visionx2.png" className="w-[45vw]" />
+            <img src="/hamayoon-visionx2.png" className="w-[45vw]" alt="Hamayoon Ashraf showcasing VisionX" />
           </div>
         </div>
       </div>

@@ -28,7 +28,7 @@ export default function ProjectCard({
         <div className="w-full lg:w-[100%] lg:max-w-[100%] lg:basis-[100%]">
           <div className="flex flex-col items-stretch justify-start">
             <div className="flex flex-col p-2 shadow-2xl w-full h-full rounded-4xl">
-              <h2 className="font-poppins font-bold text-5xl text-center">
+              <h2 className="font-poppins font-bold text-5xl text-center break-words">
                 {projectName}
               </h2>
               {projectSubtitle && (

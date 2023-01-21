@@ -10,6 +10,7 @@ import { MdOutlineWork } from "react-icons/md";
 import { RiAwardFill } from "react-icons/ri";
 import { GiBarbecue, GiHamburger } from "react-icons/gi";
 import ProjectCardTest from "../cards/ProjectCardTest";
+import Fade from "react-reveal/Fade";
 
 export default function ResumeSection() {
   const options = {
@@ -83,8 +84,9 @@ export default function ResumeSection() {
                 icon={<FaUserGraduate color="white" size={"24px"} />}
               >
                 <p className="dark:text-white text-black font-poppins">
-                <span className="font-bold">Courses</span>: Thermodynamics, Digital Systems, Electric Machines and Actuators, Machine Design, Heat Transfer, Microprocessor Systems, Fluid Mechanics
-
+                  <span className="font-bold">Courses</span>: Thermodynamics,
+                  Digital Systems, Electric Machines and Actuators, Machine
+                  Design, Heat Transfer, Microprocessor Systems, Fluid Mechanics
                 </p>
               </ResumeBlock>
             </div>
@@ -102,10 +104,19 @@ export default function ResumeSection() {
                 icon={<GiHamburger color="white" size={"24px"} />}
               >
                 <ul className="list-disc dark:text-white text-black font-poppins ml-4">
-                  <li>Managing inventory to ensure optimal stock levels and availability</li>
+                  <li>
+                    Managing inventory to ensure optimal stock levels and
+                    availability
+                  </li>
                   <li>Scheduling and handling sales to drive revenue</li>
-                  <li>Resolving customer complaints and issues to improve satisfaction</li>
-                  <li>Managing financial records and reports to support decision making</li>
+                  <li>
+                    Resolving customer complaints and issues to improve
+                    satisfaction
+                  </li>
+                  <li>
+                    Managing financial records and reports to support decision
+                    making
+                  </li>
                 </ul>
               </ResumeBlock>
               <ResumeBlock
@@ -117,7 +128,8 @@ export default function ResumeSection() {
                 <ul className="list-disc dark:text-white text-black font-poppins ml-4">
                   <li>Assisted with catering and inventory management</li>
                   <li>
-                  Exhibited strong communication abilities when communicating with customer
+                    Exhibited strong communication abilities when communicating
+                    with customer
                   </li>
                   <li>Handled large-scale orders, such as weddings</li>
                 </ul>
@@ -131,67 +143,67 @@ export default function ResumeSection() {
             >
               <H2 className="heading">Projects</H2>
               <div className="flex justify-center">
-                <div className="grid auto-rows-max grid-cols-1 xl:gap-x-8 gap-x-5 gap-y-8 mt-3 mb-12 w-full">
-                  <ProjectCard
-                    projectName="VisionX"
-                    projectSubtitle="Developed at DeltaHacks 6"
-                    projectText={
-                      <ProjectDescriptionList
-                        list={[
-                          `Led a group of 4 to create a device that assists individuals with visual impairments`,
-                          `Integrated Tensorflow framework to perform object recognition`,
-                          `3D designed and managed all of the wired components`,
-                          `Wrote Python scripts for Raspberry Pi to control the ultrasonic sensors`
-                        ]}
-                      />
-                    }
-                    images={Array.from(
-                      [1, 2, 3, 4, 5],
-                      (x) => `/images/visionx/visionx-${x}.jpg`
-                    )}
-                    alts={Array.from(
-                      [1, 2, 3, 4, 5],
-                      (x) => `VisionX Image ${x}`
-                    )}
-                  />
-                  <ProjectCard
-                    projectName="Implementation of Simple Processor "
-                    projectSubtitle="Developed at TMU University"
-                    projectText={
-                      <ProjectDescriptionList
-                        list={[
-                          `Designed and implementation of simple 8-bit microprocessor`,
-                          `The processor consisted of ALU, Registers to store data, and control unit`,
-                          `Performed simple mathematical operations using altera boards`
-                        ]}
-                      />
-                    }
-                  />
-                  <ProjectCard
-                    projectName="Automated Door Unlocking System"
-                    // projectSubtitle="Developed at DeltaHacks 7"
-                    projectText={
-                      <ProjectDescriptionList
-                        list={[
-                          `Created a door access solution for individuals with disabilities by designing a system that utilizes a fingerprint sensor and rack gear mechanism`,
-                          `Used Arduino, servo motors, and fingerprint sensors to ensure secure and efficient operation`,
-                        ]}
-                      />
-                    }
-                  />
-                  <ProjectCard
-                    projectName="Blind Spot Car Detector"
-                    // projectSubtitle="Developed at DeltaHacks 7"
-                    projectText={
-                      <ProjectDescriptionList
-                        list={[
-                          `Blind spot car detection device to assist driving in old vehicles`,
-                          `Allows users to get an alert while changing lanes if a car is in the blind spot`,
-                        ]}
-                      />
-                    }
-                  />
-                </div>
+                  <div className="grid auto-rows-max grid-cols-1 xl:gap-x-8 gap-x-5 gap-y-8 mt-3 mb-12 w-full">
+                    <ProjectCard
+                      projectName="VisionX"
+                      projectSubtitle="Developed at DeltaHacks 6"
+                      projectText={
+                        <ProjectDescriptionList
+                          list={[
+                            `Led a group of 4 to create a device that assists individuals with visual impairments`,
+                            `Integrated Tensorflow framework to perform object recognition`,
+                            `3D designed and managed all of the wired components`,
+                            `Wrote Python scripts for Raspberry Pi to control the ultrasonic sensors`,
+                          ]}
+                        />
+                      }
+                      images={Array.from(
+                        [1, 2, 3, 4, 5],
+                        (x) => `/images/visionx/visionx-${x}.jpg`
+                      )}
+                      alts={Array.from(
+                        [1, 2, 3, 4, 5],
+                        (x) => `VisionX Image ${x}`
+                      )}
+                    />
+                    <ProjectCard
+                      projectName="Implementation of Simple Processor "
+                      projectSubtitle="Developed at TMU University"
+                      projectText={
+                        <ProjectDescriptionList
+                          list={[
+                            `Designed and implementation of simple 8-bit microprocessor`,
+                            `The processor consisted of ALU, Registers to store data, and control unit`,
+                            `Performed simple mathematical operations using altera boards`,
+                          ]}
+                        />
+                      }
+                    />
+                    <ProjectCard
+                      projectName="Automated Door Unlocking System"
+                      // projectSubtitle="Developed at DeltaHacks 7"
+                      projectText={
+                        <ProjectDescriptionList
+                          list={[
+                            `Created a door access solution for individuals with disabilities by designing a system that utilizes a fingerprint sensor and rack gear mechanism`,
+                            `Used Arduino, servo motors, and fingerprint sensors to ensure secure and efficient operation`,
+                          ]}
+                        />
+                      }
+                    />
+                    <ProjectCard
+                      projectName="Blind Spot Car Detector"
+                      // projectSubtitle="Developed at DeltaHacks 7"
+                      projectText={
+                        <ProjectDescriptionList
+                          list={[
+                            `Blind spot car detection device to assist driving in old vehicles`,
+                            `Allows users to get an alert while changing lanes if a car is in the blind spot`,
+                          ]}
+                        />
+                      }
+                    />
+                  </div>
               </div>
             </div>
           </div>

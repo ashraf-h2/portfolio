@@ -4,6 +4,7 @@ import AboutSection from "../components/section/AboutSection";
 import ResumeSection from "../components/section/ResumeSection";
 import SpaceFiller from "../components/space-fillers/SpaceFiller";
 import Head from "next/head";
+import Fade from "react-reveal/Fade";
 
 export default function Home() {
   return (
@@ -40,7 +41,7 @@ export default function Home() {
         />
         <meta
           property="og:image"
-          content="https://www.hamayoonashraf.com/hamayoon-visionx2.png"
+          content="https://www.hamayoonashraf.com/images/visionx/visionx-1.jpg"
         />
 
         <link rel="amphtml" href="https://www.hamayoonashraf.com/index_amp" />
@@ -50,11 +51,19 @@ export default function Home() {
       <Navbar />
       <div className="h-screen text-black bg-black flex items-center overflow-hidden select-none">
         <div className="relative bottom-16 xl:bottom-24 w-full">
-          <div className="leading-[10vw] block absolute w-full text-[13vw] -mr-[0.1em] tracking-[0.1em] text-center text-indigo-500 fade font-extrabold">
-            HAMAYOON
-          </div>
+          <Fade bottom delay={1000}>
+            <div className="leading-[10vw] block absolute w-full text-[13vw] -mr-[0.1em] tracking-[0.1em] text-center text-indigo-500 fade font-extrabold">
+              HAMAYOON
+            </div>
+          </Fade>
           <div className="absolute fade-image -bottom-[26vw] left-[28%] z-50">
-            <img src="/hamayoon-visionx2.png" className="w-[45vw]" alt="Hamayoon Ashraf showcasing VisionX" />
+            <Fade>
+              <img
+                src="/hamayoon-visionx2.webp"
+                className="w-[45vw]"
+                alt="Hamayoon Ashraf showcasing VisionX"
+              />
+            </Fade>
           </div>
         </div>
       </div>

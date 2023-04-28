@@ -5,12 +5,9 @@ import ResumeBlock from "../blocks/ResumeBlock";
 import ProjectCard, { ProjectDescriptionList } from "../cards/ProjectCard";
 import H2 from "../headings/H2";
 import { useInView } from "react-intersection-observer";
-import { FaUserGraduate } from "react-icons/fa";
-import { MdOutlineWork } from "react-icons/md";
-import { RiAwardFill } from "react-icons/ri";
+import { FaUserGraduate, FaRobot } from "react-icons/fa";
 import { GiBarbecue, GiHamburger } from "react-icons/gi";
-import ProjectCardTest from "../cards/ProjectCardTest";
-import Fade from "react-reveal/Fade";
+import { AiFillCode } from "react-icons/ai";
 
 export default function ResumeSection() {
   const options = {
@@ -84,9 +81,11 @@ export default function ResumeSection() {
                 icon={<FaUserGraduate color="white" size={"24px"} />}
               >
                 <p className="dark:text-white text-black font-poppins">
-                  <span className="font-bold">Courses</span>: Thermodynamics,
-                  Digital Systems, Electric Machines and Actuators, Machine
-                  Design, Heat Transfer, Microprocessor Systems, Fluid Mechanics
+                  <span className="font-bold">Courses</span>: Fluid Dynamics,
+                  Thermodynamics and Heat Transfer, Statics and Strength of
+                  Materials, Digital Systems, Dynamics, Electric Circuits,
+                  Digital Computation and Programming, Manufacturing
+                  Fundamentals
                 </p>
               </ResumeBlock>
             </div>
@@ -98,31 +97,30 @@ export default function ResumeSection() {
             >
               <H2>Work Experience</H2>
               <ResumeBlock
-                dates={[["Feb. 2022", "Current"]]}
-                heading="Manager (Part-Time)"
-                subheading="Shawarma Royale, Scarborough"
-                icon={<GiHamburger color="white" size={"24px"} />}
+                dates={[["Oct. 2020", "Feb. 2021"]]}
+                heading="TorontoMet Design League"
+                subheading="Space Mining Robot"
+                icon={<FaRobot color="white" size={"24px"} />}
               >
                 <ul className="list-disc dark:text-white text-black font-poppins ml-4">
                   <li>
-                    Managing inventory to ensure optimal stock levels and
-                    availability
-                  </li>
-                  <li>Scheduling and handling sales to drive revenue</li>
-                  <li>
-                    Resolving customer complaints and issues to improve
-                    satisfaction
+                    Assembled a robotic arm on SolidWorks that utilises
+                    jackhammers to drill through large rocks
                   </li>
                   <li>
-                    Managing financial records and reports to support decision
-                    making
+                    Produced detailed drawings and assembly diagrams for all
+                    parts of project as per requirements
+                  </li>
+                  <li>
+                    Devised a solution to mine rocks on Mars to support
+                    Earth&apos;s increasing demand for natural resources
                   </li>
                 </ul>
               </ResumeBlock>
               <ResumeBlock
                 dates={[["Jan. 2020", "Sep. 2021"]]}
-                heading="Supervisor"
-                subheading="Simply BBQ"
+                heading="Simply BBQ"
+                subheading="Supervisor"
                 icon={<GiBarbecue color="white" size={"24px"} />}
               >
                 <ul className="list-disc dark:text-white text-black font-poppins ml-4">
@@ -134,6 +132,43 @@ export default function ResumeSection() {
                   <li>Handled large-scale orders, such as weddings</li>
                 </ul>
               </ResumeBlock>
+              <ResumeBlock
+                dates={[["Jan. 2020", "Sep. 2021"]]}
+                heading="Coding Instructor"
+                subheading="Lead Instructor"
+                icon={<AiFillCode color="white" size={"24px"} />}
+              >
+                <ul className="list-disc dark:text-white text-black font-poppins ml-4">
+                  <li>Assisted with catering and inventory management</li>
+                  <li>
+                    Exhibited strong communication abilities when communicating
+                    with customer
+                  </li>
+                  <li>Handled large-scale orders, such as weddings</li>
+                </ul>
+              </ResumeBlock>
+              <ResumeBlock
+                dates={[["Jan. 2022", "Dec. 2022"]]}
+                heading="Shawarma Royale, Scarborough"
+                subheading="Manager"
+                icon={<GiHamburger color="white" size={"24px"} />}
+              >
+                <ul className="list-disc dark:text-white text-black font-poppins ml-4">
+                  <li>
+                    Managing inventory to ensure optimal stock levels and
+                    availability
+                  </li>
+                  <li>
+                    Resolving customer complaints and issues to improve
+                    satisfaction
+                  </li>
+                  <li>Scheduling and handling sales to drive revenue</li>
+                  <li>
+                    Managing financial records and reports to support decision
+                    making
+                  </li>
+                </ul>
+              </ResumeBlock>
             </div>
 
             <div
@@ -143,67 +178,66 @@ export default function ResumeSection() {
             >
               <H2 className="heading">Projects</H2>
               <div className="flex justify-center">
-                  <div className="grid auto-rows-max grid-cols-1 xl:gap-x-8 gap-x-5 gap-y-8 mt-3 mb-12 w-full">
-                    <ProjectCard
-                      projectName="VisionX"
-                      projectSubtitle="Developed at DeltaHacks 6"
-                      projectText={
-                        <ProjectDescriptionList
-                          list={[
-                            `Led a group of 4 to create a device that assists individuals with visual impairments`,
-                            `Integrated Tensorflow framework to perform object recognition`,
-                            `3D designed and managed all of the wired components`,
-                            `Wrote Python scripts for Raspberry Pi to control the ultrasonic sensors`,
-                          ]}
-                        />
-                      }
-                      images={Array.from(
-                        [1, 2, 3, 4, 5],
-                        (x) => `/images/visionx/visionx-${x}.jpg`
-                      )}
-                      alts={Array.from(
-                        [1, 2, 3, 4, 5],
-                        (x) => `VisionX Image ${x}`
-                      )}
-                    />
-                    <ProjectCard
-                      projectName="Implementation of Simple Processor "
-                      projectSubtitle="Developed at TMU University"
-                      projectText={
-                        <ProjectDescriptionList
-                          list={[
-                            `Designed and implementation of simple 8-bit microprocessor`,
-                            `The processor consisted of ALU, Registers to store data, and control unit`,
-                            `Performed simple mathematical operations using altera boards`,
-                          ]}
-                        />
-                      }
-                    />
-                    <ProjectCard
-                      projectName="Automated Door Unlocking System"
-                      // projectSubtitle="Developed at DeltaHacks 7"
-                      projectText={
-                        <ProjectDescriptionList
-                          list={[
-                            `Created a door access solution for individuals with disabilities by designing a system that utilizes a fingerprint sensor and rack gear mechanism`,
-                            `Used Arduino, servo motors, and fingerprint sensors to ensure secure and efficient operation`,
-                          ]}
-                        />
-                      }
-                    />
-                    <ProjectCard
-                      projectName="Blind Spot Car Detector"
-                      // projectSubtitle="Developed at DeltaHacks 7"
-                      projectText={
-                        <ProjectDescriptionList
-                          list={[
-                            `Blind spot car detection device to assist driving in old vehicles`,
-                            `Allows users to get an alert while changing lanes if a car is in the blind spot`,
-                          ]}
-                        />
-                      }
-                    />
-                  </div>
+                <div className="grid auto-rows-max grid-cols-1 xl:gap-x-8 gap-x-5 gap-y-8 mt-3 mb-12 w-full">
+                  <ProjectCard
+                    projectName="VisionX"
+                    projectSubtitle="Developed at DeltaHacks 6"
+                    projectText={
+                      <ProjectDescriptionList
+                        list={[
+                          `Led a group of 4 to create a device that assists individuals with visual impairment`,
+                          `3D designed and managed all of the wired components`,
+                          `Wrote Python scripts for Raspberry Pi to control the ultrasonic sensors`,
+                        ]}
+                      />
+                    }
+                    images={Array.from(
+                      [1, 2, 3, 4, 5],
+                      (x) => `/images/visionx/visionx-${x}.jpg`
+                    )}
+                    alts={Array.from(
+                      [1, 2, 3, 4, 5],
+                      (x) => `VisionX Image ${x}`
+                    )}
+                  />
+                  <ProjectCard
+                    projectName="Automated Door Unlocking System"
+                    projectSubtitle="Personal Project"
+                    projectText={
+                      <ProjectDescriptionList
+                        list={[
+                          `Created a door access solution for individuals with disabilities`,
+                          `Used Arduino, servo motors, and fingerprint sensors to ensure secure and efficient operation`,
+                        ]}
+                      />
+                    }
+                  />
+                  <ProjectCard
+                    projectName="Arithmetic Logic Unit (ALU)"
+                    projectSubtitle="16-bit ALU core in Intel Quartus"
+                    projectText={
+                      <ProjectDescriptionList
+                        list={[
+                          `Designed all the components of the device from scratch (Ex: Latches, 4-16 decoder, FSM, 7 segment etc)`,
+                          `Implemented various operations such as addition, subtraction, modulation`,
+                          `Tested by implementing the code on a FPGA (Field Programmable Gate Array)`,
+                        ]}
+                      />
+                    }
+                  />
+                  <ProjectCard
+                    projectName="Self-Driving Robot"
+                    projectSubtitle="Arduino in C/C++"
+                    projectText={
+                      <ProjectDescriptionList
+                        list={[
+                          `Manufactured a chassis with 4 barriers through 3D printing to carry Arduino components and be the robot`,
+                          `Assembled 10 component circuits using Arduino Nano and Breadboard to provide power for 2 motors and 2 sensors to operate`,
+                        ]}
+                      />
+                    }
+                  />
+                </div>
               </div>
             </div>
           </div>

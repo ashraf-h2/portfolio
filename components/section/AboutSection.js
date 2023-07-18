@@ -12,10 +12,10 @@ export default function AboutSection() {
           leftDisplay={
             <div className="w-full h-full relative flex items-center justify-center">
               <Image
-                src="/hamayoon-about.JPG"
+                src="/hamayoon-about.jpeg"
                 alt="About Photo"
-                width={500}
-                height={500}
+                width={400}
+                height={400}
                 className="rounded-3xl"
               />
             </div>
@@ -24,13 +24,13 @@ export default function AboutSection() {
             <div className="xl:pl-20 lg:pl-10 font-poppins">
               <h2 className="mb-6 font-poppins font-bold text-5xl">About Me</h2>
               <p className="text-xl leading-relaxed">
-                Highly motivated Mechanical Engineering student with experience
-                in SolidWorks, Python, Java, JavaScript, HTML/CSS, Microsoft
-                Office Suite, Adobe Photoshop, Arduino/Raspberry Pi and 3D
-                Printing. Strong skills in prototyping, problem solving, 3D
-                printing and design. Seeking a co-op opportunity to apply my
-                knowledge and skills in a real-world setting and gain valuable
-                industry experience.
+                Highly motivated Mechanical Engineering student experienced in
+                SolidWorks, Python, Java, JavaScript, Microsoft Office Suite,
+                Adobe Photoshop, Arduino/Raspberry Pi, 3D Printing, welding,
+                soldering, and drill press. Strong skills in prototyping,
+                problem solving, 3D printing, and design. Seeking co-op
+                opportunity to apply knowledge and gain valuable industry
+                experience.
               </p>
 
               <Fade bottom delay={50}>

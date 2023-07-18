@@ -96,7 +96,7 @@ export default function ResumeSection() {
               ref={experienceSectionRef}
             >
               <H2>Work Experience</H2>
-              <ResumeBlock
+              {/* <ResumeBlock
                 dates={[["Oct. 2020", "Feb. 2021"]]}
                 heading="TorontoMet Design League"
                 subheading="Space Mining Robot"
@@ -116,23 +116,26 @@ export default function ResumeSection() {
                     Earth&apos;s increasing demand for natural resources
                   </li>
                 </ul>
-              </ResumeBlock>
+              </ResumeBlock> */}
               <ResumeBlock
-                dates={[["Jan. 2020", "Sep. 2021"]]}
+                dates={[
+                  ["Mar. 2020", "Aug. 2021"],
+                  ["May 2023", "Present"],
+                ]}
                 heading="Simply BBQ"
                 subheading="Supervisor"
                 icon={<GiBarbecue color="white" size={"24px"} />}
               >
                 <ul className="list-disc dark:text-white text-black font-poppins ml-4">
-                  <li>Assisted with catering and inventory management</li>
+                  <li>Assisting with catering and inventory management</li>
                   <li>
-                    Exhibited strong communication abilities when communicating
+                    Exhibiting strong communication abilities when communicating
                     with customer
                   </li>
-                  <li>Handled large-scale orders, such as weddings</li>
+                  <li>Handling large-scale orders, such as weddings</li>
                 </ul>
               </ResumeBlock>
-              <ResumeBlock
+              {/* <ResumeBlock
                 dates={[["Jan. 2020", "Sep. 2021"]]}
                 heading="Coding Instructor"
                 subheading="Lead Instructor"
@@ -146,7 +149,7 @@ export default function ResumeSection() {
                   </li>
                   <li>Handled large-scale orders, such as weddings</li>
                 </ul>
-              </ResumeBlock>
+              </ResumeBlock> */}
               <ResumeBlock
                 dates={[["Jan. 2022", "Dec. 2022"]]}
                 heading="Shawarma Royale, Scarborough"
@@ -155,16 +158,16 @@ export default function ResumeSection() {
               >
                 <ul className="list-disc dark:text-white text-black font-poppins ml-4">
                   <li>
-                    Managing inventory to ensure optimal stock levels and
+                    Managed inventory to ensure optimal stock levels and
                     availability
                   </li>
                   <li>
-                    Resolving customer complaints and issues to improve
+                    Resolved customer complaints and issues to improve
                     satisfaction
                   </li>
-                  <li>Scheduling and handling sales to drive revenue</li>
+                  <li>Scheduled and handled sales to drive revenue</li>
                   <li>
-                    Managing financial records and reports to support decision
+                    Managed financial records and reports to support decision
                     making
                   </li>
                 </ul>
@@ -179,6 +182,58 @@ export default function ResumeSection() {
               <H2 className="heading">Projects</H2>
               <div className="flex justify-center">
                 <div className="grid auto-rows-max grid-cols-1 xl:gap-x-8 gap-x-5 gap-y-8 mt-3 mb-12 w-full">
+                  <ProjectCard
+                    projectName="Self-Driving Robot"
+                    projectSubtitle="Arduino in C/C++"
+                    projectText={
+                      <ProjectDescriptionList
+                        list={[
+                          `Created a self-driving robot using Arduino and ultrasonic sensors to detect objects and navigate mazest`,
+                          `Developed innovative algorithms for object detection and maze navigation`,
+                        ]}
+                      />
+                    }
+                  />
+                  <ProjectCard
+                    projectName="Arithmetic Logic Unit (ALU)"
+                    projectSubtitle="16-bit ALU core in Intel Quartus"
+                    projectText={
+                      <ProjectDescriptionList
+                        list={[
+                          `Designed all the components of the device from scratch (Ex: Latches, 4-16 decoder, FSM, 7 segment etc)`,
+                          `Implemented various operations such as addition, subtraction, modulation`,
+                          `Tested by implementing the code on a FPGA`,
+                        ]}
+                      />
+                    }
+                  />
+                  <ProjectCard
+                    projectName="Automated Door Unlocking System"
+                    projectSubtitle="Personal Project"
+                    projectText={
+                      <ProjectDescriptionList
+                        list={[
+                          `Created a door access solution for individuals with disabilities`,
+                          `Used Arduino, servo motors, and fingerprint sensors to ensure secure and efficient operation`,
+                        ]}
+                      />
+                    }
+                  />
+
+                  <ProjectCard
+                    projectName="Space Mining Robot"
+                    projectSubtitle="TorontoMet Design League"
+                    projectText={
+                      <ProjectDescriptionList
+                        list={[
+                          `Assembled a robotic arm on SolidWorks that utilises jackhammers to drill through large rocks`,
+                          `Produced detailed drawings and assembly diagrams for all parts of project as per requirements`,
+                          `Devised a solution to mine rocks on Mars to support Earth's increasing demand for natural resources`,
+                        ]}
+                      />
+                    }
+                  />
+
                   <ProjectCard
                     projectName="VisionX"
                     projectSubtitle="Developed at DeltaHacks 6"
@@ -199,43 +254,6 @@ export default function ResumeSection() {
                       [1, 2, 3, 4, 5],
                       (x) => `VisionX Image ${x}`
                     )}
-                  />
-                  <ProjectCard
-                    projectName="Automated Door Unlocking System"
-                    projectSubtitle="Personal Project"
-                    projectText={
-                      <ProjectDescriptionList
-                        list={[
-                          `Created a door access solution for individuals with disabilities`,
-                          `Used Arduino, servo motors, and fingerprint sensors to ensure secure and efficient operation`,
-                        ]}
-                      />
-                    }
-                  />
-                  <ProjectCard
-                    projectName="Arithmetic Logic Unit (ALU)"
-                    projectSubtitle="16-bit ALU core in Intel Quartus"
-                    projectText={
-                      <ProjectDescriptionList
-                        list={[
-                          `Designed all the components of the device from scratch (Ex: Latches, 4-16 decoder, FSM, 7 segment etc)`,
-                          `Implemented various operations such as addition, subtraction, modulation`,
-                          `Tested by implementing the code on a FPGA (Field Programmable Gate Array)`,
-                        ]}
-                      />
-                    }
-                  />
-                  <ProjectCard
-                    projectName="Self-Driving Robot"
-                    projectSubtitle="Arduino in C/C++"
-                    projectText={
-                      <ProjectDescriptionList
-                        list={[
-                          `Manufactured a chassis with 4 barriers through 3D printing to carry Arduino components and be the robot`,
-                          `Assembled 10 component circuits using Arduino Nano and Breadboard to provide power for 2 motors and 2 sensors to operate`,
-                        ]}
-                      />
-                    }
                   />
                 </div>
               </div>

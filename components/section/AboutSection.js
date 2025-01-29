@@ -24,13 +24,12 @@ export default function AboutSection() {
             <div className="xl:pl-20 lg:pl-10 font-poppins">
               <h2 className="mb-6 font-poppins font-bold text-5xl">About Me</h2>
               <p className="text-xl leading-relaxed">
-                Highly motivated Mechanical Engineering student experienced in
-                SolidWorks, Python, Java, JavaScript, Microsoft Office Suite,
-                Adobe Photoshop, Arduino/Raspberry Pi, 3D Printing, welding,
-                soldering, and drill press. Strong skills in prototyping,
-                problem solving, 3D printing, and design. Seeking co-op
-                opportunity to apply knowledge and gain valuable industry
-                experience.
+                Passionate Mechanical Engineering student with expertise in CAD design (SolidWorks), 
+                full-stack development (Python, Java, JavaScript), and hands-on fabrication. 
+                Proficient in rapid prototyping through 3D printing, welding, and precision 
+                machining. Combines technical skills with creative problem-solving to bring 
+                innovative designs to life. Currently seeking co-op opportunities to contribute 
+                to meaningful projects while gaining industry experience.
               </p>
 
               <Fade bottom delay={50}>

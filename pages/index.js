@@ -56,7 +56,7 @@ export default function Home() {
               HAMAYOON
             </div>
           </Fade>
-          <div className="absolute fade-image -bottom-[26vw] left-[28%] z-50">
+          {/* <div className="absolute fade-image -bottom-[26vw] left-[28%] z-50">
             <Fade>
               <img
                 src="/hamayoon-visionx2.webp"
@@ -64,7 +64,7 @@ export default function Home() {
                 alt="Hamayoon Ashraf showcasing VisionX"
               />
             </Fade>
-          </div>
+          </div> */}
         </div>
       </div>
       <div className="dark:bg-black">

@@ -12,9 +12,9 @@ export default function MainCarousel({ images, alts }) {
     );
   return (
     <div id="controls-carousel" className="relative w-full">
-      <div className="relative h-56 overflow-hidden rounded-lg md:h-[33rem]">
+      <div className="relative h-56 overflow-hidden rounded-lg md:min-h-[38rem]">
         <div className="duration-700 ease-in-out">
-          <div className="absolute block -translate-x-1/2 -translate-y-1/2 top-1/2 left-1/2 w-full h-full">
+          <div className="absolute block -translate-x-1/2 -translate-y-1/2 top-1/2 left-1/2 w-full">
             <img src={images[activeIndex]} alt={alts[activeIndex]} />
           </div>
         </div>

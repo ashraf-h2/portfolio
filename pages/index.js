@@ -49,7 +49,7 @@ export default function Home() {
         <link rel="icon" href="/favicon.ico" />
       </Head>
       <Navbar />
-      <div className="space-y-4 py-12">
+      <div className="space-y-4 py-12 dark:bg-black">
         <Fade bottom delay={100}>
           <div className="w-full text-6xl tracking-widest text-center text-indigo-500 font-black">
             Hamayoon Ashraf

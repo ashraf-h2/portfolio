@@ -7,7 +7,7 @@ import H2 from "../headings/H2";
 import { useInView } from "react-intersection-observer";
 import { FaUserGraduate, FaRobot } from "react-icons/fa";
 import { GiBarbecue, GiHamburger } from "react-icons/gi";
-import { AiFillCode } from "react-icons/ai";
+import { MdEngineering } from "react-icons/md";
 
 export default function ResumeSection() {
   const options = {
@@ -75,7 +75,7 @@ export default function ResumeSection() {
             >
               <H2>Education</H2>
               <ResumeBlock
-                dates={[["Sep. 2019", "Present"]]}
+                dates={[["Sep. 2019", "Jun. 2025"]]}
                 heading="Bachelor of Engineering, Mechanical Engineering, specialization in Mechatronics"
                 subheading="Toronto Metropolitan University"
                 icon={<FaUserGraduate color="white" size={"24px"} />}
@@ -96,79 +96,80 @@ export default function ResumeSection() {
               ref={experienceSectionRef}
             >
               <H2>Work Experience</H2>
-              {/* <ResumeBlock
-                dates={[["Oct. 2020", "Feb. 2021"]]}
-                heading="TorontoMet Design League"
-                subheading="Space Mining Robot"
-                icon={<FaRobot color="white" size={"24px"} />}
-              >
-                <ul className="list-disc dark:text-white text-black font-poppins ml-4">
-                  <li>
-                    Assembled a robotic arm on SolidWorks that utilises
-                    jackhammers to drill through large rocks
-                  </li>
-                  <li>
-                    Produced detailed drawings and assembly diagrams for all
-                    parts of project as per requirements
-                  </li>
-                  <li>
-                    Devised a solution to mine rocks on Mars to support
-                    Earth&apos;s increasing demand for natural resources
-                  </li>
-                </ul>
-              </ResumeBlock> */}
               <ResumeBlock
-                dates={[
-                  ["Mar. 2020", "Aug. 2021"],
-                  ["May 2023", "Present"],
-                ]}
-                heading="Simply BBQ"
-                subheading="Supervisor"
-                icon={<GiBarbecue color="white" size={"24px"} />}
+                dates={[["Jan 2024", "Sep 2024"]]}
+                heading="Reliability Engineering Intern"
+                subheading="VPC Group Inc."
+                icon={<MdEngineering color="white" size={"24px"} />}
               >
-                <ul className="list-disc dark:text-white text-black font-poppins ml-4">
-                  <li>Assisting with catering and inventory management</li>
+                <ul className="list-disc dark:text-white text-black font-poppins ml-4 space-y-2 text-lg">
                   <li>
-                    Exhibiting strong communication abilities when communicating
-                    with customer
+                    Assisted in the implementation of a tote-based chemical
+                    offloading system aligned with Pre-Start Health and Safety
+                    Review (PSR) requirements under Ontario Regulation 851.
                   </li>
-                  <li>Handling large-scale orders, such as weddings</li>
+                  <li>
+                    Reviewed and updated P&IDs (Piping & Instrumentation
+                    Diagrams) to reflect current piping configurations and
+                    support future safety/maintenance assessments.
+                  </li>
+                  <li>
+                    Reviewed rack system certifications and safety documentation
+                    for compliance with CSA S136, S345, and A344 standards
+                    during the implementation of a tote-based chemical
+                    offloading system.
+                  </li>
+                  <li>
+                    Analyzed MSDS sheets, PPE requirements, and spill
+                    containment procedures as part of chemical safety planning
+                    and compliance efforts.
+                  </li>
+                  <li>
+                    Collaborated with engineers and contractors during
+                    installation/commissioning phases and supported Joint Health
+                    & Safety Committee (JHSC) documentation.
+                  </li>
+                  <li>
+                    Verified field conditions against piping layouts and CMMS
+                    data to identify documentation gaps and support reliability
+                    updates.
+                  </li>
                 </ul>
               </ResumeBlock>
-              {/* <ResumeBlock
-                dates={[["Jan. 2020", "Sep. 2021"]]}
-                heading="Coding Instructor"
-                subheading="Lead Instructor"
-                icon={<AiFillCode color="white" size={"24px"} />}
-              >
-                <ul className="list-disc dark:text-white text-black font-poppins ml-4">
-                  <li>Assisted with catering and inventory management</li>
-                  <li>
-                    Exhibited strong communication abilities when communicating
-                    with customer
-                  </li>
-                  <li>Handled large-scale orders, such as weddings</li>
-                </ul>
-              </ResumeBlock> */}
               <ResumeBlock
-                dates={[["Jan. 2022", "Dec. 2022"]]}
-                heading="Shawarma Royale, Scarborough"
-                subheading="Manager"
-                icon={<GiHamburger color="white" size={"24px"} />}
+                dates={[["Aug 2023", "Dec 2023"]]}
+                heading="Maintenance Engineering Intern"
+                subheading="VPC Group Inc."
+                icon={<MdEngineering color="white" size={"24px"} />}
               >
-                <ul className="list-disc dark:text-white text-black font-poppins ml-4">
+                <ul className="list-disc dark:text-white text-black font-poppins ml-4 space-y-2 text-lg">
                   <li>
-                    Managed inventory to ensure optimal stock levels and
-                    availability
+                    Managed preventive maintenance programs across 15 sites
+                    using Limble CMMS, scheduling inspections, automating
+                    recurring tasks, and tracking asset history to minimize
+                    equipment downtime.
                   </li>
                   <li>
-                    Resolved customer complaints and issues to improve
-                    satisfaction
+                    Digitized and organized spare parts inventory by identifying
+                    critical components, assigning storage locations, and
+                    integrating associated bill of materials with minimum stock
+                    levels into Limble.
                   </li>
-                  <li>Scheduled and handled sales to drive revenue</li>
                   <li>
-                    Managed financial records and reports to support decision
-                    making
+                    Integrated new production lines into CMMS by creating
+                    preventive maintenance schedules, registering equipment, and
+                    linking spare parts to support servicing workflows.
+                  </li>
+                  <li>
+                    Analyzed inspection trends and maintenance history within
+                    Limble CMMS to identify recurring faults in motors, belts,
+                    and sensors, supporting audit readiness and proactive
+                    servicing.
+                  </li>
+                  <li>
+                    Verified equipment condition and spare part requirements
+                    during field walkthroughs for preventive maintenance tasks,
+                    ensuring CMMS records matched actual site conditions.
                   </li>
                 </ul>
               </ResumeBlock>
@@ -183,66 +184,45 @@ export default function ResumeSection() {
               <div className="flex justify-center">
                 <div className="grid auto-rows-max grid-cols-1 xl:gap-x-8 gap-x-5 gap-y-8 mt-3 mb-12 w-full">
                   <ProjectCard
-                    projectName="Self-Driving Robot"
-                    projectSubtitle="Arduino in C/C++"
+                    projectName="Coffee Bean Destoner – 3D CAD Modeling & Electro-Mechanical Prototyping"
                     projectText={
                       <ProjectDescriptionList
                         list={[
-                          `Created a self-driving robot using Arduino and ultrasonic sensors to detect objects and navigate mazest`,
-                          `Developed innovative algorithms for object detection and maze navigation`,
+                          `Designed a functional coffee bean destoner to separate stones from beans, creating 3D models and engineering drawings in SolidWorks, applying GD&T and fit tolerances to ensure 3D printability.`,
+                          `Fabricated prototype components using PLA+ filament and snap-fit joints, performing iterative adjustments based on fit testing and dimensional deviations.`,
+                          `Collaborated with teammates to integrate mechanical, electrical, and control systems, contributing to part alignment and system packaging during assembly.`,
+                        ]}
+                      />
+                    }
+                    images={Array.from(
+                      [1, 2, 3, 4],
+                      (x) => `/images/coffee-destoner/${x}.jpeg`
+                    )}
+                    alts={Array.from(
+                      [1, 2, 3, 4],
+                      (x) => `Coffee Bean Destoner ${x}`
+                    )}
+                  />
+                  <ProjectCard
+                    projectName="Motor Housing Bearing Installer – Pneumatic Systems & PLC Integration"
+                    projectText={
+                      <ProjectDescriptionList
+                        list={[
+                          `Designed and built an autonomous electro-pneumatic system for press-fitting motor bearings, prioritizing operator safety using a dual push-button circuit compliant with OSHA machine safeguarding standards.`,
+                          `Programmed a PLC to control pneumatic actuators for bearing insertion, achieving a consistent 30-second cycle time and meeting all functional and timing requirements.`,
+                          `Integrated limit sensors and interlocks to ensure safe operation, and collaborated with team members on troubleshooting control logic and system reliability.`,
                         ]}
                       />
                     }
                   />
                   <ProjectCard
-                    projectName="Arithmetic Logic Unit (ALU)"
-                    projectSubtitle="16-bit ALU core in Intel Quartus"
+                    projectName="VisionX – Assistive Device for Visual Impairment (Hackathon Project)"
                     projectText={
                       <ProjectDescriptionList
                         list={[
-                          `Designed all the components of the device from scratch (Ex: Latches, 4-16 decoder, FSM, 7 segment etc)`,
-                          `Implemented various operations such as addition, subtraction, modulation`,
-                          `Tested by implementing the code on a FPGA`,
-                        ]}
-                      />
-                    }
-                  />
-                  <ProjectCard
-                    projectName="Automated Door Unlocking System"
-                    projectSubtitle="Personal Project"
-                    projectText={
-                      <ProjectDescriptionList
-                        list={[
-                          `Created a door access solution for individuals with disabilities`,
-                          `Used Arduino, servo motors, and fingerprint sensors to ensure secure and efficient operation`,
-                        ]}
-                      />
-                    }
-                  />
-
-                  <ProjectCard
-                    projectName="Space Mining Robot"
-                    projectSubtitle="TorontoMet Design League"
-                    projectText={
-                      <ProjectDescriptionList
-                        list={[
-                          `Assembled a robotic arm on SolidWorks that utilises jackhammers to drill through large rocks`,
-                          `Produced detailed drawings and assembly diagrams for all parts of project as per requirements`,
-                          `Devised a solution to mine rocks on Mars to support Earth's increasing demand for natural resources`,
-                        ]}
-                      />
-                    }
-                  />
-
-                  <ProjectCard
-                    projectName="VisionX"
-                    projectSubtitle="Developed at DeltaHacks 6"
-                    projectText={
-                      <ProjectDescriptionList
-                        list={[
-                          `Led a group of 4 to create a device that assists individuals with visual impairment`,
-                          `3D designed and managed all of the wired components`,
-                          `Wrote Python scripts for Raspberry Pi to control the ultrasonic sensors`,
+                          `Led a 4-member team at DeltaHacks 6 to develop a wearable obstacle-detection device for visually impaired users by integrating ultrasonic sensors.`,
+                          `Designed the 3D-printed enclosure and organized internal component layout for compact wiring and sensor placement.`,
+                          `Wrote Python scripts on a Raspberry Pi to process real-time distance data and control haptic feedback alerts.`,
                         ]}
                       />
                     }
@@ -254,6 +234,18 @@ export default function ResumeSection() {
                       [1, 2, 3, 4, 5],
                       (x) => `VisionX Image ${x}`
                     )}
+                  />
+                  <ProjectCard
+                    projectName="Self-Balancing Pendulum – Real-Time Control System Design"
+                    projectText={
+                      <ProjectDescriptionList
+                        list={[
+                          `Built a real-time control system for a self-balancing pendulum using embedded sensors, actuators, and microcontroller-based PID and pole-placement algorithms.`,
+                          `Performed fault modeling and risk analysis using FMEA and Fishbone diagrams, identifying failure modes and integrating safety features into the mechanical and electrical design.`,
+                          `Designed an HMI panel and implemented responsive control logic, using bottom-up and top-down reasoning to optimize system maintainability, signal filtering, and user interface layout.`,
+                        ]}
+                      />
+                    }
                   />
                 </div>
               </div>

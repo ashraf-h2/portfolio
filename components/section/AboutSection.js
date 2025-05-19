@@ -23,13 +23,24 @@ export default function AboutSection() {
           rightDisplay={
             <div className="xl:pl-20 lg:pl-10 font-poppins">
               <h2 className="mb-6 font-poppins font-bold text-5xl">About Me</h2>
-              <p className="text-xl leading-relaxed">
-                Passionate Mechanical Engineering student with expertise in CAD design (SolidWorks), 
-                full-stack development (Python, Java, JavaScript), and hands-on fabrication. 
-                Proficient in rapid prototyping through 3D printing, welding, and precision 
-                machining. Combines technical skills with creative problem-solving to bring 
-                innovative designs to life. Currently seeking co-op opportunities to contribute 
-                to meaningful projects while gaining industry experience.
+              <p className="text-lg leading-relaxed">
+                Mechanical Engineering graduate with a strong foundation in
+                maintenance, reliability, and mechanical design. Experienced in
+                working with piping systems, P&IDs, PFDs, and isometric
+                drawings. Proficient in preventive maintenance planning, spare
+                parts management, and asset tracking using Limble CMMS.
+                Supported chemical offloading systems and Pre-Start Health and
+                Safety Reviews (PSR) through hands-on field inspections and
+                documentation updates.
+              </p>
+              <p className="text-lg leading-relaxed pt-2">
+                Skilled in automation and controls, including PLC programming,
+                embedded systems (Arduino, Raspberry Pi), and electro-pneumatic
+                integration. Technically proficient in SolidWorks, AutoCAD, SAP,
+                MATLAB, Python, and the Microsoft Office Suite. Known for strong
+                communication, organization, and problem-solving abilities, with
+                a collaborative approach to engineering challenges and
+                cross-functional teamwork.
               </p>
 
               <Fade bottom delay={50}>

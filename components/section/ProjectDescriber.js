@@ -8,7 +8,7 @@ export default function ProjectDescriber({leftDisplay, rightDisplay}) {
         <div className="w-full lg:w-[40%] lg:max-w-[40%] lg:basis-[40%]">
           <div className="flex items-stretch justify-center">
             <div
-              className="flex p-2 shadow-2xl w-full h-full rounded-4xl"
+              className="flex p-2 w-full h-full rounded-4xl"
             >
               <span className="w-full h-full">
                 {leftDisplay}

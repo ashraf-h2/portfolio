@@ -49,14 +49,16 @@ export default function Home() {
         <link rel="icon" href="/favicon.ico" />
       </Head>
       <Navbar />
-      <div className="h-screen text-black bg-black flex items-center overflow-hidden select-none">
-        <div className="relative bottom-16 xl:bottom-24 w-full">
-          <Fade bottom delay={1000}>
-            <div className="leading-[10vw] block absolute w-full text-[13vw] -mr-[0.1em] tracking-[0.1em] text-center text-indigo-500 fade font-extrabold">
-              HAMAYOON
-            </div>
-          </Fade>
-          {/* <div className="absolute fade-image -bottom-[26vw] left-[28%] z-50">
+      <div className="space-y-4 py-12">
+        <Fade bottom delay={100}>
+          <div className="w-full text-6xl tracking-widest text-center text-indigo-500 font-black">
+            Hamayoon Ashraf
+          </div>
+          <div className="w-full text-xl tracking-widest text-center text-indigo-500 font-black">
+            MECHANICAL ENGINEERING GRADUATE
+          </div>
+        </Fade>
+        {/* <div className="absolute fade-image -bottom-[26vw] left-[28%] z-50">
             <Fade>
               <img
                 src="/hamayoon-visionx2.webp"
@@ -65,10 +67,9 @@ export default function Home() {
               />
             </Fade>
           </div> */}
-        </div>
       </div>
       <div className="dark:bg-black">
-        <SpaceFiller />
+        {/* <SpaceFiller /> */}
         <AboutSection />
         <SpaceFiller />
         <ResumeSection />

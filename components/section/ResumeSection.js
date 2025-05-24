@@ -215,6 +215,12 @@ export default function ResumeSection() {
                         ]}
                       />
                     }
+                    images={Array.from(
+                      [1],
+                      (x) => `/images/bearing-installer/${x}.jpeg`
+                    )}
+                    alts={Array.from([1], (x) => `Bearing Installer ${x}`)}
+                    projectLink={"/bearing.pdf"}
                   />
                   <ProjectCard
                     projectName="VisionX – Assistive Device for Visual Impairment (Hackathon Project)"
@@ -235,6 +241,7 @@ export default function ResumeSection() {
                       [1, 2, 3, 4, 5],
                       (x) => `VisionX Image ${x}`
                     )}
+                    projectLink={"https://devpost.com/software/visionx"}
                   />
                   <ProjectCard
                     projectName="Self-Balancing Pendulum – Real-Time Control System Design"
@@ -247,6 +254,15 @@ export default function ResumeSection() {
                         ]}
                       />
                     }
+                    images={Array.from(
+                      [1, 2, 3, 4],
+                      (x) => `/images/pendulum/${x}.jpeg`
+                    )}
+                    alts={Array.from(
+                      [1, 2, 3, 4],
+                      (x) => `Self-Balancing Pendulum ${x}`
+                    )}
+                    projectLink={"/pendulum.pdf"}
                   />
                 </div>
               </div>

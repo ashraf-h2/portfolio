@@ -14,7 +14,7 @@ export default function MainCarousel({ images, alts }) {
     <div id="controls-carousel" className="relative w-full">
       <div className="relative h-56 overflow-hidden md:min-h-[38rem]">
         <div className="duration-700 ease-in-out">
-          <div className="absolute block -translate-x-1/2 -translate-y-1/2 top-1/2 left-1/2 w-full">
+          <div className="absolute flex justify-center items-center w-full">
             <img
               src={images[activeIndex]}
               alt={alts[activeIndex]}

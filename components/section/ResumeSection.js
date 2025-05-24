@@ -202,6 +202,7 @@ export default function ResumeSection() {
                       [1, 2, 3, 4],
                       (x) => `Coffee Bean Destoner ${x}`
                     )}
+                    projectLink="/capstone.pdf"
                   />
                   <ProjectCard
                     projectName="Motor Housing Bearing Installer – Pneumatic Systems & PLC Integration"

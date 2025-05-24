@@ -1,6 +1,6 @@
-import React from "react";
 import MainCarousel from "../carousel/MainCarousel";
 import { Fade } from "react-reveal";
+import Link from "next/link";
 
 export function ProjectDescriptionList({ list }) {
   return (
@@ -22,6 +22,7 @@ export default function ProjectCard({
   projectText,
   images,
   alts,
+  projectLink,
 }) {
   return (
     <Fade bottom cascade duration={1000}>
@@ -44,6 +45,19 @@ export default function ProjectCard({
                 </div>
               )}
               <div className="mt-6">{projectText}</div>
+              {projectLink && (
+                <div className="flex items-center justify-center">
+                  <Link href={projectLink} passHref legacyBehavior>
+                    <a
+                      target="_blank"
+                      rel="noreferrer"
+                      className="px-3 py-2 w-max bg-indigo-600 rounded-lg"
+                    >
+                      View Project
+                    </a>
+                  </Link>
+                </div>
+              )}
             </div>
             {/* </div> */}
           </div>

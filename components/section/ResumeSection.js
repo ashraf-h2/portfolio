@@ -97,44 +97,12 @@ export default function ResumeSection() {
             >
               <H2>Work Experience</H2>
               <ResumeBlock
-                dates={[["Jan 2024", "Sep 2024"]]}
-                heading="Reliability Engineering Intern"
+                dates={[["Jul 2025", "Present"]]}
+                heading="Engineering Trainee"
                 subheading="VPC Group Inc."
                 icon={<MdEngineering color="white" size={"24px"} />}
               >
-                <ul className="list-disc dark:text-white text-black font-poppins ml-4 space-y-2 text-lg">
-                  <li>
-                    Assisted in the implementation of a tote-based chemical
-                    offloading system aligned with Pre-Start Health and Safety
-                    Review (PSR) requirements under Ontario Regulation 851.
-                  </li>
-                  <li>
-                    Reviewed and updated P&IDs (Piping & Instrumentation
-                    Diagrams) to reflect current piping configurations and
-                    support future safety/maintenance assessments.
-                  </li>
-                  <li>
-                    Reviewed rack system certifications and safety documentation
-                    for compliance with CSA S136, S345, and A344 standards
-                    during the implementation of a tote-based chemical
-                    offloading system.
-                  </li>
-                  <li>
-                    Analyzed MSDS sheets, PPE requirements, and spill
-                    containment procedures as part of chemical safety planning
-                    and compliance efforts.
-                  </li>
-                  <li>
-                    Collaborated with engineers and contractors during
-                    installation/commissioning phases and supported Joint Health
-                    & Safety Committee (JHSC) documentation.
-                  </li>
-                  <li>
-                    Verified field conditions against piping layouts and CMMS
-                    data to identify documentation gaps and support reliability
-                    updates.
-                  </li>
-                </ul>
+            
               </ResumeBlock>
               <ResumeBlock
                 dates={[["Aug 2023", "Dec 2023"]]}

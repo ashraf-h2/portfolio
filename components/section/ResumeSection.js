@@ -105,41 +105,12 @@ export default function ResumeSection() {
             
               </ResumeBlock>
               <ResumeBlock
-                dates={[["Aug 2023", "Dec 2023"]]}
-                heading="Maintenance Engineering Intern"
+                dates={[["Aug 2023", "Sep 2024"]]}
+                heading="Engineering Intern"
                 subheading="VPC Group Inc."
                 icon={<MdEngineering color="white" size={"24px"} />}
               >
-                <ul className="list-disc dark:text-white text-black font-poppins ml-4 space-y-2 text-lg">
-                  <li>
-                    Managed preventive maintenance programs across 15 sites
-                    using Limble CMMS, scheduling inspections, automating
-                    recurring tasks, and tracking asset history to minimize
-                    equipment downtime.
-                  </li>
-                  <li>
-                    Digitized and organized spare parts inventory by identifying
-                    critical components, assigning storage locations, and
-                    integrating associated bill of materials with minimum stock
-                    levels into Limble.
-                  </li>
-                  <li>
-                    Integrated new production lines into CMMS by creating
-                    preventive maintenance schedules, registering equipment, and
-                    linking spare parts to support servicing workflows.
-                  </li>
-                  <li>
-                    Analyzed inspection trends and maintenance history within
-                    Limble CMMS to identify recurring faults in motors, belts,
-                    and sensors, supporting audit readiness and proactive
-                    servicing.
-                  </li>
-                  <li>
-                    Verified equipment condition and spare part requirements
-                    during field walkthroughs for preventive maintenance tasks,
-                    ensuring CMMS records matched actual site conditions.
-                  </li>
-                </ul>
+              
               </ResumeBlock>
             </div>
 

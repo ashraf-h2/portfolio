@@ -70,7 +70,7 @@ export default function Home() {
       </div>
       <div className="dark:bg-black">
         {/* <SpaceFiller /> */}
-        <AboutSection />
+        {/* <AboutSection /> */}
         <SpaceFiller />
         <ResumeSection />
         <SpaceFiller />
